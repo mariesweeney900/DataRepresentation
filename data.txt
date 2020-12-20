@@ -1,0 +1,30 @@
+﻿/* Showing results for Products.xlsx */
+
+/* CREATE TABLE */
+CREATE TABLE table_name(
+Type VARCHAR(100),
+Barcode DOUBLE,
+Make VARCHAR(100),
+Price DOUBLE
+);
+
+/* INSERT QUERY NO: 1 */
+INSERT INTO table_name(Type, Barcode, Make, Price)
+VALUES
+(
+'Ketchup', 23456, 'Heinz', 2
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO table_name(Type, Barcode, Make, Price)
+VALUES
+(
+'Potatoes', 56789, 'Ardfert', 10
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO table_name(Type, Barcode, Make, Price)
+VALUES
+(
+'Tomatoes', 26678, 'OnTheVine', 3
+);
