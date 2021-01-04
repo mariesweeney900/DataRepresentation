@@ -14,7 +14,7 @@ data.txt amass the code used to comprise the tables.
 
 *A file named .py which create CRUD operations for the database.
 
-*A Flask RESTful API, .py that performs HTTP requests to begin the functions in .py.
+*A Flask RESTful API, flask.py that performs HTTP requests to begin the functions in .py.
 
 *A txt file named requirements.txt which holds the packages needed to run the API in the virtual environment.
 
