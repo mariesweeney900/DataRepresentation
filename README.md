@@ -8,7 +8,7 @@ This repository contains:
 *The files which can be used to form the database:
 products.sql has the code used to commence the database and tables.
 amass the code used to comprise the tables.
-*.py begins a connection to MySQL and contains the tables with the parent code.
+*Buildproductsdatabase.ipyb begins a connection to MySQL and contains the tables with the parent code.
 
 *Config.py contains the code to connect to mysql.
 
