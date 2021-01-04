@@ -7,6 +7,7 @@ Created on Sun Jan  3 00:31:14 2021
 
 #Code adapted from https://github.com/andrewbeattycourseware/dataRepresenation2020/blob/master/code/week05-lecture/servers/restserver.py
 #!flask/bin/python
+#create products
 from flask import Flask, jsonify,  request, abort, make_response
 
 app = Flask(__name__,
@@ -34,6 +35,8 @@ products = [
     }
 ]
 
+#https://www.google.com/search?q=app+route+in+flask&oq=app+route+in+flask&aqs=chrome..69i57j0i22i30l7.5908j0j7&sourceid=chrome&ie=UTF-8
+#map the specific URL with the associated function
 @app.route('/products', methods=['GET'])
 def get_products():
     return jsonify( {'products':products})
@@ -82,8 +85,8 @@ def update_products(type):
     foundProducts[0]['make'] =request.json.get('make', foundProducts[0]['make'])
     foundProducts[0]['price'] =request.json.get('price', foundProducts[0]['price'])
     return jsonify( {'products':foundProducts[0]})
-#curl -i -H "Content-Type:application/json" -X PUT -d '{"barcode":""}' http://localhost:5000/products
-#curl -i -H "Content-Type:application/json" -X PUT -d "{\"make\":\"\"}" http://localhost:5000/products
+#curl -i -H "Content-Type:application/json" -X PUT -d '{"barcode":"56789"}' http://localhost:5000/products
+#curl -i -H "Content-Type:application/json" -X PUT -d "{\"barcode\":\"56789\"}" http://localhost:5000/products
 
 
 @app.route('/products/<string:type>', methods =['DELETE'])
