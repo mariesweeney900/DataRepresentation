@@ -2,6 +2,7 @@
 
 
 This repository comprises of a Flask server API project for an assessment in Data Representation.
+Please find the project description in BigProjectDescription.pdf
 
 This repository contains:
 
@@ -12,9 +13,9 @@ data.txt amass the code used to comprise the tables.
 
 *buildproducts.py contains the code to connect to mysql.
 
-*A file named .py which create CRUD operations for the database.
+*A file named buildproducts.py which create CRUD operations for the database.
 
-*A Flask RESTful API, flask.py that performs HTTP requests to begin the functions in .py.
+*A Flask RESTful API, flask.py that performs HTTP requests to begin the functions in buildproducts.py.
 
 *A txt file named requirements.txt which holds the packages needed to run the API in the virtual environment.
 
